@@ -1,0 +1,253 @@
+/* Color palette being used: https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373 */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFBF9C;
+    font-family: "Bree Serif", Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #2E0934;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #FFF5D7;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    margin: 10px; 
+}
+
+#brand a {
+    color: #F36870;
+    font-family: "Dancing Script",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul a {
+    color: #2E0934;
+}
+
+nav ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+   
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: #FFBF9C;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+/* content */
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.outer_box {
+    display: flex;
+    flex-direction: row;
+    margin: 7em;
+    margin-top: 4em;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 248, 244, 0.25);
+}
+
+/* Introduction box */
+.inner_box_1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 4em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inner_box_1 ul {
+    display: flex;
+    padding: 1em;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.inner_box_1 ul li {
+    display: flex;
+    margin: 1em;
+}
+
+/* Divider */
+
+.inner_box_2 {
+    display: flex;
+    padding: 4em;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #B0D6B4;
+}
+
+/* Projects box */
+.inner_box_3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.inner_box_3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    align-items: stretch;
+}
+.inner_box_3 ul li {
+    display: flex;
+    margin: 1em;
+}
+
+.inner_box_3 img {
+    margin-top: 24px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Projects page */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+h2 {
+    margin: 16px;
+}
+
+h3 {
+    margin: 16px;
+}
+
+p {
+    margin: 16px;
+}
+.project_1 ul {
+    display: inline-block;
+    padding: 0 24px;
+    margin-left: 24px;
+    text-align: left;
+}
+
+.project_1 ul li {                                                                                
+    list-style-position: outside;
+}
+
+.project_1 img {
+    margin-top: 24px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    nav ul {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    nav ul a {
+        color: #2E0934;
+    }
+    
+    nav ul li {
+        padding: 5px;
+        margin-left: 10px;
+    }
+}
+
+
+

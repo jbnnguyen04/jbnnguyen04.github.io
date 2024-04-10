@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="/icons8-favorite-100.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="brand">
+            <a href="/index.html">Jade Nguyen</a>
+        </div>
+
+        <nav>
+            <ul>
+               <li><a href="/index.html">Homepage</a></li>
+               <li><a href="/projects.html">Projects</a></li>
+               <li><a href="/contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>    
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/homepage">Homepage</a></li>
+               <li><a href="/projects">Projects</a></li>
+               <li><a href="/contact">Contact</a></li> 
+            </ul>
+        </div>
+    </header>
+    <script src="index.js"></script>
+
+    <h1> Projects </h1>
+
+    <div class="outer_box">
+        <a id="project_1_in_project_page">
+        <div class="project_1">
+            <h2> HYBE Financial Statement | Web Scraping Project </h2>
+            <h3> Scraped financial data from 2016 to 2022 of HYBE Corporation from Wall Street Journal website </h3>
+            <p>Languages used:</p>
+            <ul>
+                <li>R Programming Language - libraries: dplyr, janitor, rvest, readr, tidyr, tidyverse, stringr, scales</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft Power BI</li>
+            </ul>
+            <img src = "HYBE Income Statement Snapshot.svg" alt="snapshot of HYBE Income Statement from 2016 to 2022"/>
+        </a>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
